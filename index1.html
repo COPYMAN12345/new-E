@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AES Encryption</title>
+    <link rel="stylesheet" href="massage.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>AES Encryption</h1>
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Enter your message"></textarea>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <label for="timeLimit">Time Limit (minutes):</label>
+        <input type="number" id="timeLimit" placeholder="Enter time limit">
+        <button id="encryptBtn">Encrypt</button>
+        <div class="output">
+            <label for="encryptedMessage">Encrypted Message:</label>
+            <textarea id="encryptedMessage" readonly></textarea>
+            <div id="qrcode"></div> <!-- QR code will be displayed here -->
+        </div>
+    </div>
+    <script src="encrypt.js"></script>
+</body>
+</html>
